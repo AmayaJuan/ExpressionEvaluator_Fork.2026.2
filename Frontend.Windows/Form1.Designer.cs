@@ -32,9 +32,15 @@
             btn7 = new Button();
             btn8 = new Button();
             btn9 = new Button();
-            button1 = new Button();
+            btn6 = new Button();
             btn5 = new Button();
             btn4 = new Button();
+            this.button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
             SuspendLayout();
             // 
             // txtDisplay
@@ -78,15 +84,15 @@
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn6
             // 
-            button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(146, 112);
-            button1.Name = "button1";
-            button1.Size = new Size(61, 49);
-            button1.TabIndex = 6;
-            button1.Text = "9";
-            button1.UseVisualStyleBackColor = true;
+            btn6.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn6.Location = new Point(146, 112);
+            btn6.Name = "btn6";
+            btn6.Size = new Size(61, 49);
+            btn6.TabIndex = 6;
+            btn6.Text = "6";
+            btn6.UseVisualStyleBackColor = true;
             // 
             // btn5
             // 
@@ -108,13 +114,79 @@
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.button1.Location = new Point(146, 222);
+            this.button1.Name = "button1";
+            this.button1.Size = new Size(61, 49);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "6";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Location = new Point(79, 222);
+            button2.Name = "button2";
+            button2.Size = new Size(61, 49);
+            button2.TabIndex = 11;
+            button2.Text = "5";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.Location = new Point(12, 222);
+            button3.Name = "button3";
+            button3.Size = new Size(61, 49);
+            button3.TabIndex = 10;
+            button3.Text = "4";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.Location = new Point(146, 167);
+            button4.Name = "button4";
+            button4.Size = new Size(61, 49);
+            button4.TabIndex = 15;
+            button4.Text = "9";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.Location = new Point(79, 167);
+            button5.Name = "button5";
+            button5.Size = new Size(61, 49);
+            button5.TabIndex = 14;
+            button5.Text = "8";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.Location = new Point(12, 167);
+            button6.Name = "button6";
+            button6.Size = new Size(61, 49);
+            button6.TabIndex = 13;
+            button6.Text = "7";
+            button6.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(406, 450);
-            Controls.Add(button1);
+            Controls.Add(this.button1);
+            Controls.Add(button2);
+            Controls.Add(button3);
+            Controls.Add(button4);
+            Controls.Add(button5);
+            Controls.Add(button6);
+            Controls.Add(btn6);
             Controls.Add(btn5);
             Controls.Add(btn4);
             Controls.Add(btn9);
@@ -133,8 +205,13 @@
         private Button btn7;
         private Button btn8;
         private Button btn9;
-        private Button button1;
+        private Button btn6;
         private Button btn5;
         private Button btn4;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Button button6;
     }
 }
