@@ -35,12 +35,11 @@
             btn6 = new Button();
             btn5 = new Button();
             btn4 = new Button();
-            this.button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
+            this.btnDot = new Button();
+            this.btn0 = new Button();
+            this.btn3 = new Button();
+            this.btn2 = new Button();
+            btn1 = new Button();
             SuspendLayout();
             // 
             // txtDisplay
@@ -114,78 +113,68 @@
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnDot
             // 
-            this.button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.button1.Location = new Point(146, 222);
-            this.button1.Name = "button1";
-            this.button1.Size = new Size(61, 49);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "6";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDot.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.btnDot.Location = new Point(146, 222);
+            this.btnDot.Name = "btnDot";
+            this.btnDot.Size = new Size(61, 49);
+            this.btnDot.TabIndex = 12;
+            this.btnDot.Text = ".";
+            this.btnDot.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn0
             // 
-            button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(79, 222);
-            button2.Name = "button2";
-            button2.Size = new Size(61, 49);
-            button2.TabIndex = 11;
-            button2.Text = "5";
-            button2.UseVisualStyleBackColor = true;
+            this.btn0.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.btn0.Location = new Point(12, 222);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new Size(128, 49);
+            this.btn0.TabIndex = 10;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += this.button3_Click;
             // 
-            // button3
+            // btn3
             // 
-            button3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(12, 222);
-            button3.Name = "button3";
-            button3.Size = new Size(61, 49);
-            button3.TabIndex = 10;
-            button3.Text = "4";
-            button3.UseVisualStyleBackColor = true;
+            this.btn3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.btn3.Location = new Point(146, 167);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new Size(61, 49);
+            this.btn3.TabIndex = 15;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn2
             // 
-            button4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(146, 167);
-            button4.Name = "button4";
-            button4.Size = new Size(61, 49);
-            button4.TabIndex = 15;
-            button4.Text = "9";
-            button4.UseVisualStyleBackColor = true;
+            this.btn2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.btn2.Location = new Point(79, 167);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new Size(61, 49);
+            this.btn2.TabIndex = 14;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btn1
             // 
-            button5.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Location = new Point(79, 167);
-            button5.Name = "button5";
-            button5.Size = new Size(61, 49);
-            button5.TabIndex = 14;
-            button5.Text = "8";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.Location = new Point(12, 167);
-            button6.Name = "button6";
-            button6.Size = new Size(61, 49);
-            button6.TabIndex = 13;
-            button6.Text = "7";
-            button6.UseVisualStyleBackColor = true;
+            btn1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn1.Location = new Point(12, 167);
+            btn1.Name = "btn1";
+            btn1.Size = new Size(61, 49);
+            btn1.TabIndex = 13;
+            btn1.Text = "1";
+            btn1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(406, 450);
-            Controls.Add(this.button1);
-            Controls.Add(button2);
-            Controls.Add(button3);
-            Controls.Add(button4);
-            Controls.Add(button5);
-            Controls.Add(button6);
+            ClientSize = new Size(406, 283);
+            Controls.Add(btnDot);
+            Controls.Add(btn0);
+            Controls.Add(btn3);
+            Controls.Add(btn2);
+            Controls.Add(btn1);
             Controls.Add(btn6);
             Controls.Add(btn5);
             Controls.Add(btn4);
@@ -202,16 +191,16 @@
         #endregion
 
         private TextBox txtDisplay;
+        private Button btn1;
         private Button btn7;
         private Button btn8;
         private Button btn9;
         private Button btn6;
         private Button btn5;
         private Button btn4;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
+        private Button btn2;
+        private Button btn3;
+        private Button btn0;
+        private Button btnDot;
     }
 }
